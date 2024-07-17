@@ -7,7 +7,7 @@ const useSearchMovies = (apiKey) => {
   useEffect(() => {
     if (buscar) {
       const apiKey = 'c9f04fa4';
-      fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${buscar}`)
+      fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${buscar}`)
         .then(res => res.json())
         .then(data => {
           if (data.Search) {
