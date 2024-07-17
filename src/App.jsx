@@ -1,10 +1,15 @@
-
+import './index.css'
+import Title from './componets/Title/Title'
+import Input from './componets/Input/Input'
+import Resultados from './componets/Resultados/Resultados'
 
 const App = () => {
   return (
-    <div>
-      <h1> Mini Netflix en React.js con samu </h1>
-    </div>
+    <>
+      <Title Title={ 'Mini Netflix' } />
+      <Input />
+      <Resultados />
+    </>
   )
 }
 

@@ -1,0 +1,21 @@
+h1 {
+    color: #E50914;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 10mm;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* PC */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+}
