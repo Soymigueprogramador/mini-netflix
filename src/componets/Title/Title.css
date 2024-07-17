@@ -6,16 +6,3 @@ h1 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* PC */
-@media (min-width: 1200px) {
-    body {
-        font-size: 20px;
-    }
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-    body {
-        font-size: 10px;
-    }
-}

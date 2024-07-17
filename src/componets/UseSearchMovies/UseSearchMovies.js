@@ -3,8 +3,11 @@ import { useState, useEffect } from 'react';
 const useSearchMovies = (apiKey) => {
   const [buscar, setBuscar] = useState('');
   const [peliculas, setPeliculas] = useState([]);
+  const [ miniNetflix, setMiniNetflix ] = useState('');
 
   useEffect(() => {
+    document.title = `miniNetflix: ${miniNetflix}`;
+
     if (buscar) {
       const apiKey = 'c9f04fa4';
       fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${buscar}`)
@@ -20,7 +23,7 @@ const useSearchMovies = (apiKey) => {
           console.log(error);
         });
     }
-  }, [buscar, apiKey]);
+  }, [buscar, apiKey, miniNetflix]);
 
   const manejarBusquedas = (e) => {
     e.preventDefault();
